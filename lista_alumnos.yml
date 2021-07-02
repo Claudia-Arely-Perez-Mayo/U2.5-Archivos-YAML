@@ -1,0 +1,12 @@
+alumnos:
+-   item_id: 1
+    Matricula: 91810190
+    Nombre: Claudia Arely
+    APaterno: Perez
+    AMterno: Mayo
+    Edad: 20
+    Telefono: 9191563826
+    Correo: claudiaarely00@gmail.com
+    Carrera: RIyC
+
+
