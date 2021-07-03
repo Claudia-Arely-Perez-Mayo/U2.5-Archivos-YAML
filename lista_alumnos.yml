@@ -8,5 +8,13 @@ alumnos:
     Telefono: 9191563826
     Correo: claudiaarely00@gmail.com
     Carrera: RIyC
-
+-   item_id: 2
+    Matricula: 91810897
+    Nombre: Juan Daniel
+    APaterno: Vazquez
+    AMterno: vera
+    Edad: 24
+    Telefono: 5619333011
+    Correo: aljim400ro@gmail.com
+    Carrera: RIyC
 
