@@ -51,7 +51,7 @@ async def agregar(request:Request):
     nuevos_datos["item_id"] = ultmimo_id+1
     nuevos_datos["matricula"] = int(datos_formulario["f_matricula"])
     nuevos_datos["nombre"] = datos_formulario["f_nombre"]
-    nuevos_datos["apateno"] = datos_formulario["f_apellidopaterno"]
+    nuevos_datos["apaterno"] = datos_formulario["f_apellidopaterno"]
     nuevos_datos["amaterno"] = datos_formulario["f_apellidomaterno"]
     nuevos_datos["edad"] = int(datos_formulario["f_edad"])
     nuevos_datos["telefono"] = int(datos_formulario["f_telefono"])
