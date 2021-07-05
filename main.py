@@ -11,7 +11,8 @@ miPlantilla = Jinja2Templates(directory="plantillas")
 
 @app.get("/inicio/", response_class=HTMLResponse)
 async def read_item(request: Request):
-    return miPlantilla.TemplateResponse("index.html",{"request":request})
+	datos = await cargarYAML()
+    return miPlantilla.TemplateResponse("index.html",{"request":request, "lista":datos})
 
 @app.get("/integrantes/", response_class=HTMLResponse)
 async def leer_integrante(request: Request, Matricula: int, Nombre: str, APaterno: str, AMaterno: str, Edad: int, Telefono: int, 
