@@ -1,12 +1,16 @@
 <html>
     <head>
-        <title>{{nom}}</title>
+        <title>Sitio personal</title>
         <link href="{{ url_for('mirecurso', path='/misEstilos.css') }}" rel="stylesheet">
+        <script src="{{ url_for('mirecurso', path='/bootstrap.bundle.min.js') }}"></script>
     </head>
     <body>
-        <div id="titulos">sitio personal de {{nom}}</div>
+        <div id="titulos">sitio personal del Equipo1</div>
+        <a href="/inicio"><button class="btn btn-link">Regresar</button></a>
         <div id="parrafos">
             <ul>
+                {% for diccionario in lista %}
+                {% if diccionario.get('item_id') == id: %}
                 <li><strong>Matricula:</strong> {{matri}}</li>
                 <li><strong>Nombre:</strong>  {{nom}}</li>
                 <li><strong>APaterno:</strong> {{apellidopaterno}}</li>
@@ -15,7 +19,9 @@
                 <li><strong>Telefono:</strong> {{telefono}}</li>
                 <li><strong>Correo:</strong> {{correo}}</li>
                 <li><strong>Carrera:</strong> {{carrera}}</li>
+                {% endif %}
             </ul>
+            {% endfor %}
         </div>
     </body>
 </html>
