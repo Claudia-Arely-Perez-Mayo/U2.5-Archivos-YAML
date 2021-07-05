@@ -16,6 +16,6 @@ async def read_item(request: Request):
 @app.get("/integrantes/", response_class=HTMLResponse)
 async def leer_integrante(request: Request, Matricula: int, Nombre: str, APaterno: str, AMaterno: str, Edad: int, Telefono: int, 
                             Correo: str, Carrera: str):
-    return miPlantilla.TemplateResponse("integrantes.html",{"request":request, "matri": Matricula,
-                                                            "nom":Nombre, "apellidopaterno":APaterno, "apellidomaterno": AMaterno "edad":Edad,
+    return miPlantilla.TemplateResponse("integrantes.html",{"request":request, "matri": Matricula, "nom":Nombre, "apellidopaterno":APaterno, 
+                                                            "apellidomaterno": AMaterno, "edad":Edad,
                                                             "telefono": Telefono, "correo": Correo, "carrera": Carrera})
