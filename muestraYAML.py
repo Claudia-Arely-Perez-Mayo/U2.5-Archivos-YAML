@@ -74,3 +74,18 @@ async def eliminar(request:Request,id:int):
 
     return RedirectResponse("/lista",303)
 
+@app.get("/modificar/{id}")
+async def modificar(request:Request,id:int):
+    datos = await cargarYAML()
+    id1 = datos[id]
+    id2 = id1['item_id']
+    print (id2)
+    return miPlantilla.TemplateResponse("modificar.html",{"request":request,"lista":datos,"id":id2})
+
+@app.get("/colaborador/{id}")
+async def modificar(request:Request,id:int):
+    datos = await cargarJSON()
+    id1 = datos[id]
+    id2 = id1['item_id']
+    print (id2)
+    return miPlantilla.TemplateResponse("personal.html",{"request":request,"lista":datos,"id":id2})
