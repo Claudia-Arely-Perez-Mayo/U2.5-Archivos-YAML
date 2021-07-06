@@ -32,8 +32,9 @@ async def guardarYAML(datosAgregar:List):
 
 @app.get("/", response_class=HTMLResponse)
 async def read_item(request: Request):
-    return miPlantilla.TemplateResponse("index.html",{"request":request})
-
+    datos = await cargarYAML()
+    return miPlantilla.TemplateResponse("index.html",{"request":request, "lista":datos})
+    
 
 @app.get("/lista", response_class=HTMLResponse)
 async def iniciar(request: Request):
@@ -84,8 +85,8 @@ async def modificar(request:Request,id:int):
 
 @app.get("/colaborador/{id}")
 async def modificar(request:Request,id:int):
-    datos = await cargarJSON()
+    datos = await cargarYAML()
     id1 = datos[id]
     id2 = id1['item_id']
     print (id2)
-    return miPlantilla.TemplateResponse("personal.html",{"request":request,"lista":datos,"id":id2})
+    return miPlantilla.TemplateResponse("integrantes.html",{"request":request,"lista":datos,"id":id2})
