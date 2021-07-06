@@ -11,14 +11,14 @@
             <ul>
                 {% for diccionario in lista %}
                 {% if diccionario.get('item_id') == id: %}
-                <li><strong>Matricula:</strong> {{matri}}</li>
-                <li><strong>Nombre:</strong>  {{nom}}</li>
-                <li><strong>APaterno:</strong>  {{apellidopaterno}}</li>
-                <li><strong>AMaterno:</strong>  {{apellidomaterno}}</li>
-                <li><strong>Edad:</strong> {{edad}}</li>
-                <li><strong>Telefono:</strong> {{telefono}}</li>
-                <li><strong>Correo:</strong> {{correo}}</li>
-                <li><strong>Carrera:</strong>  {{carrera}}</li>
+            <li>Matricula: {{ diccionario.get('Matricula') }}</li>
+            <li>Nombre: {{ diccionario.get('Nombre')}}</li>
+            <li>Apellido Paterno: {{diccionario.get('APaterno')}}</li>
+            <li>Apellido Materno: {{diccionario.get('AMaterno')}}</li>
+            <li>Edad: {{diccionario.get('Edad')}}</li>
+            <li>Correo: {{diccionario.get('Correo')}}</li>
+            <li>Teléfono: {{diccionario.get('Telefono')}}</li>
+            <li>Carrera: {{diccionario.get('Carrera')}}</li>
                 {% endif %}
             </ul>
             {% endfor %}
