@@ -32,6 +32,7 @@
                             {% endfor %}
                             <!-- <td><a href="/eliminar/{{fila.get('item_id')}}"><button class="btn btn-danger">Eliminar</button></a></td> -->
                             <td><a href="/eliminar/{{lista.index(fila)}}"><button class="btn btn-danger">Eliminar</button></a></td>
+                            <td><a href="/modificar/{{lista.index(fila)}}"><button class="btn btn-success">Modificar</button></a></td>
                         </tr>
                     {% endfor %}
                     <tr scope="row">
