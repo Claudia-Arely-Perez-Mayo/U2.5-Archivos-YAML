@@ -3,7 +3,7 @@ alumnos:
   Matricula: 91810190
   Nombre: Claudia Arely
   APaterno: Perez
-  AMterno: Mayo
+  AMaterno: Mayo
   Edad: 20
   Telefono: 9191563826
   Correo: claudiaarely00@gmail.com
@@ -12,7 +12,7 @@ alumnos:
   Matricula: 91810897
   Nombre: Juan Daniel
   APaterno: Vazquez
-  AMterno: vera
+  AMaterno: vera
   Edad: 24
   Telefono: 5619333011
   Correo: aljim400ro@gmail.com
@@ -21,7 +21,7 @@ alumnos:
   Matricula: 91810166
   Nombre: Fabian
   APaterno: Cruz
-  AMterno: Gomez
+  AMaterno: Gomez
   Edad: 21
   Telefono: 9191685016
   Correo: levy.zg14@gmail.com
