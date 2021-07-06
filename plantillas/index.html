@@ -13,7 +13,7 @@
     <div id="parrafos"><p>Este sitio pertenece al Equipo1 y mostrará los datos de los colaboradores</p></div>
     {% for fila in lista %}
     <br>
-    <a href="/colaborador/{{lista.index(fila)}}">{{fila.get('Nombre')}} {{fila.get('APpaterno')}} {{fila.get('AMaterno')}}</a>
+    <a href="/colaborador/{{lista.index(fila)}}">{{fila.get('Nombre')}} {{fila.get('APaterno')}} {{fila.get('AMaterno')}}</a>
     {% endfor %}
 </body>
 </html>
