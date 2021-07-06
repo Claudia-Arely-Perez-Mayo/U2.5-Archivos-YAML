@@ -49,14 +49,14 @@ async def agregar(request:Request):
     #print(datos_formulario)
     ultimo_id = datos[-1].get("item_id")  #valor del id del ultimo elemento de la lista
     nuevos_datos["item_id"] = ultimo_id+1
-    nuevos_datos["matricula"] = int(datos_formulario["f_matricula"])
-    nuevos_datos["nombre"] = datos_formulario["f_nombre"]
-    nuevos_datos["apaterno"] = datos_formulario["f_apaterno"]
-    nuevos_datos["amaterno"] = datos_formulario["f_amaterno"]
-    nuevos_datos["edad"] = int(datos_formulario["f_edad"])
-    nuevos_datos["telefono"] = int(datos_formulario["f_telefono"])
-    nuevos_datos["correo"] = datos_formulario["f_correo"]
-    nuevos_datos["carrera"] = datos_formulario["f_carrera"]
+    nuevos_datos["Matricula"] = int(datos_formulario["f_matricula"])
+    nuevos_datos["Nombre"] = datos_formulario["f_nombre"]
+    nuevos_datos["APaterno"] = datos_formulario["f_apaterno"]
+    nuevos_datos["AMaterno"] = datos_formulario["f_amaterno"]
+    nuevos_datos["Edad"] = int(datos_formulario["f_edad"])
+    nuevos_datos["Telefono"] = int(datos_formulario["f_telefono"])
+    nuevos_datos["Correo"] = datos_formulario["f_correo"]
+    nuevos_datos["Carrera"] = datos_formulario["f_carrera"]
     #print(nuevos_datos)
     datos.append(nuevos_datos)
 
