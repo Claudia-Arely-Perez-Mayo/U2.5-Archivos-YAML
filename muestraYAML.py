@@ -83,6 +83,25 @@ async def modificar(request:Request,id:int):
     print (id2)
     return miPlantilla.TemplateResponse("modificar.html",{"request":request,"lista":datos,"id":id2})
 
+@app.post("/modificarJSON/{id}")
+async def modificar(request:Request,id:int):
+    datos = await cargarYAML()
+    datos[id]
+    nuevos_datos = datos[id]
+    datos_formulario = await request.form()
+    nuevos_datos["Matricula"] = int(datos_formulario["f_matricula"])
+    nuevos_datos["Nombre"] = datos_formulario["f_nombre"]
+    nuevos_datos["APaterno"] = (datos_formulario["f_apaterno"])
+    nuevos_datos["AMaterno"] = (datos_formulario["f_amaterno"])
+    nuevos_datos["Edad"] = int(datos_formulario["f_edad"])
+    nuevos_datos["Correo"] = (datos_formulario["f_correo"])
+    nuevos_datos["Telefono"] = int(datos_formulario["f_telefono"])
+    nuevos_datos["Carrera"] = (datos_formulario["f_carrera"])
+    datos[id] = nuevos_datos
+    await guardarYAML(datos)
+    return RedirectResponse("/lista",303)
+    
+
 @app.get("/colaborador/{id}")
 async def modificar(request:Request,id:int):
     datos = await cargarYAML()
