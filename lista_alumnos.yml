@@ -1,29 +1,37 @@
 alumnos:
--   item_id: 1
-    Matricula: 91810190
-    Nombre: Claudia Arely
-    APaterno: Perez
-    AMterno: Mayo
-    Edad: 20
-    Telefono: 9191563826
-    Correo: claudiaarely00@gmail.com
-    Carrera: RIyC
--   item_id: 2
-    Matricula: 91810897
-    Nombre: Juan Daniel
-    APaterno: Vazquez
-    AMterno: vera
-    Edad: 24
-    Telefono: 5619333011
-    Correo: aljim400ro@gmail.com
-    Carrera: RIyC
--   item_id: 3
-    Matricula: 91810166
-    Nombre: Fabian
-    APaterno: Cruz
-    AMterno: Gomez
-    Edad: 21
-    Telefono: 9191685016
-    Correo: levy.zg14@gmail.com
-    Carrera: RIyC
-
+- item_id: 1
+  Matricula: 91810190
+  Nombre: Claudia Arely
+  APaterno: Perez
+  AMterno: Mayo
+  Edad: 20
+  Telefono: 9191563826
+  Correo: claudiaarely00@gmail.com
+  Carrera: RIyC
+- item_id: 2
+  Matricula: 91810897
+  Nombre: Juan Daniel
+  APaterno: Vazquez
+  AMterno: vera
+  Edad: 24
+  Telefono: 5619333011
+  Correo: aljim400ro@gmail.com
+  Carrera: RIyC
+- item_id: 3
+  Matricula: 91810166
+  Nombre: Fabian
+  APaterno: Cruz
+  AMterno: Gomez
+  Edad: 21
+  Telefono: 9191685016
+  Correo: levy.zg14@gmail.com
+  Carrera: RIyC
+- item_id: 4
+  Matricula: 91810225
+  Nombre: Giobanni
+  APaterno: 'Sanchez '
+  AMaterno: de la Cruz
+  Edad: 21
+  Telefono: 9191545943
+  Correo: llomami@hotmail.com
+  Carrera: RIyC
