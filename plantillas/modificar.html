@@ -5,8 +5,9 @@
     <script src="{{ url_for('mirecurso', path='/bootstrap.bundle.min.js') }}"></script>
 <head>
     <body>
+        <center>
         <br>
-        <h3>Modificar integrante</h3>
+        <h3>Modificar datos</h3>
         <br>
         {% for diccionario in lista %}
             {% if diccionario.get('item_id') == id: %}
@@ -35,6 +36,6 @@
             </form>
             {% endif %}
         {% endfor %}
-
+</center>
     </body>     
 </html>
