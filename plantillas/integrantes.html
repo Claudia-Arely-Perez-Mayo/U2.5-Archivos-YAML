@@ -6,23 +6,23 @@
     </head>
     <body>
         <div id="titulos">sitio personal del Equipo1</div>
-        <a href="/inicio"><button class="btn btn-link">Regresar</button></a>
+        <a href="/"><button class="btn btn-link">Regresar</button></a>
         <div id="parrafos">
             <ul>
                 {% for diccionario in lista %}
                 {% if diccionario.get('item_id') == id: %}
                 <li><strong>Matricula:</strong> {{matri}}</li>
                 <li><strong>Nombre:</strong>  {{nom}}</li>
-                <li><strong>APaterno:</strong> {{apellidopaterno}}</li>
-                <li><strong>AMaterno:</strong> {{apellidomaterno}}</li>
+                <li><strong>APaterno:</strong>  {{apellidopaterno}}</li>
+                <li><strong>AMaterno:</strong>  {{apellidomaterno}}</li>
                 <li><strong>Edad:</strong> {{edad}}</li>
                 <li><strong>Telefono:</strong> {{telefono}}</li>
                 <li><strong>Correo:</strong> {{correo}}</li>
-                <li><strong>Carrera:</strong> {{carrera}}</li>
+                <li><strong>Carrera:</strong>  {{carrera}}</li>
                 {% endif %}
             </ul>
             {% endfor %}
-        </div>
+        </div>s
     </body>
 </html>
 
